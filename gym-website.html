@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>IRONPEAK GYM — Forge Your Legacy</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">IRON<span>PEAK</span></div>
+  <ul class="nav-links">
+    <li><a href="#facilities">Facilities</a></li>
+    <li><a href="#workouts">Workouts</a></li>
+    <li><a href="#personal-training">Training</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#contact" class="nav-cta">Join Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#facilities" onclick="toggleMenu()">Facilities</a>
+  <a href="#workouts" onclick="toggleMenu()">Workouts</a>
+  <a href="#personal-training" onclick="toggleMenu()">Training</a>
+  <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+  <a href="#schedule" onclick="toggleMenu()">Schedule</a>
+  <a href="#contact" onclick="toggleMenu()">Join Now</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Est. 2015 — Davangere</div>
+    <h1 class="hero-title">
+      FORGE<br>
+      YOUR<br>
+      <span class="outline">LEGA</span><span class="accent">CY</span>
+    </h1>
+    <p class="hero-sub">India's most elite training facility. Where champions are built, limits are shattered, and every rep counts.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Start Free Trial ↗</a>
+      <a href="#workouts" class="btn-ghost">Explore Classes</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-val">12K+</div>
+        <div class="stat-label">Members</div>
+      </div>
+      <div>
+        <div class="stat-val">38</div>
+        <div class="stat-label">Expert Trainers</div>
+      </div>
+      <div>
+        <div class="stat-val">60+</div>
+        <div class="stat-label">Classes / Week</div>
+      </div>
+      <div>
+        <div class="stat-val">9</div>
+        <div class="stat-label">Years Strong</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-image-wrap">
+      <div class="hero-img-bg"></div>
+      <div class="hero-gym-illustration">
+        <div class="big-icon">🏋️</div>
+        <div class="badge badge-1">OPEN 24/7</div>
+        <div class="badge badge-2">PRO CERTIFIED</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item">Strength Training</span>
+    <span class="ticker-item">Cardio Zone</span>
+    <span class="ticker-item">CrossFit</span>
+    <span class="ticker-item">Yoga & Flexibility</span>
+    <span class="ticker-item">Boxing</span>
+    <span class="ticker-item">Swimming Pool</span>
+    <span class="ticker-item">Personal Training</span>
+    <span class="ticker-item">Nutrition Coaching</span>
+    <span class="ticker-item">Recovery & Spa</span>
+    <span class="ticker-item">Strength Training</span>
+    <span class="ticker-item">Cardio Zone</span>
+    <span class="ticker-item">CrossFit</span>
+    <span class="ticker-item">Yoga & Flexibility</span>
+    <span class="ticker-item">Boxing</span>
+    <span class="ticker-item">Swimming Pool</span>
+    <span class="ticker-item">Personal Training</span>
+    <span class="ticker-item">Nutrition Coaching</span>
+    <span class="ticker-item">Recovery & Spa</span>
+  </div>
+</div>
+
+<!-- FACILITIES -->
+<section id="facilities">
+  <div class="section-tag">World-Class Amenities</div>
+  <h2 class="section-title">OUR<br><span class="outline">FACILITIES</span></h2>
+  <p class="section-desc">Over 25,000 sq ft of premium training space packed with cutting-edge equipment and luxurious amenities.</p>
+  <div class="facilities-grid reveal">
+    <div class="facility-card">
+      <span class="facility-icon">🏋️</span>
+      <div class="facility-name">Free Weights Zone</div>
+      <div class="facility-desc">500+ dumbbells, barbells, kettlebells ranging from 1kg to 100kg. Olympic lifting platforms with Eleiko bars.</div>
+      <span class="facility-tag">2,500 sq ft</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🚴</span>
+      <div class="facility-name">Cardio Arena</div>
+      <div class="facility-desc">80+ machines including treadmills, ellipticals, stair climbers, rowers, and assault bikes with personal screens.</div>
+      <span class="facility-tag">3,000 sq ft</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🥊</span>
+      <div class="facility-name">Combat Zone</div>
+      <div class="facility-desc">Full boxing ring, MMA cage, punching bags, speed bags, and a dedicated mat area for grappling.</div>
+      <span class="facility-tag">1,800 sq ft</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🏊</span>
+      <div class="facility-name">Olympic Pool</div>
+      <div class="facility-desc">25m indoor heated pool with 6 lanes. Open for lap swimming, water aerobics, and recovery sessions.</div>
+      <span class="facility-tag">Heated Year Round</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🧘</span>
+      <div class="facility-name">Mind & Body Studio</div>
+      <div class="facility-desc">Dedicated yoga, pilates, and meditation studio with sprung floors, premium mats, and ambient lighting.</div>
+      <span class="facility-tag">1,200 sq ft</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🔥</span>
+      <div class="facility-name">CrossFit Box</div>
+      <div class="facility-desc">Rig systems, rope climbs, wall balls, plyo boxes. Fully equipped for high-intensity functional training.</div>
+      <span class="facility-tag">2,000 sq ft</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🛁</span>
+      <div class="facility-name">Recovery & Spa</div>
+      <div class="facility-desc">Ice baths, steam rooms, infrared sauna, massage chairs, and compression therapy for optimal recovery.</div>
+      <span class="facility-tag">Members Only</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🥗</span>
+      <div class="facility-name">Nutrition Bar</div>
+      <div class="facility-desc">In-house café serving protein shakes, healthy meals, pre/post-workout nutrition, and hydration products.</div>
+      <span class="facility-tag">Organic Ingredients</span>
+    </div>
+    <div class="facility-card">
+      <span class="facility-icon">🅿️</span>
+      <div class="facility-name">Parking & Locker</div>
+      <div class="facility-desc">200-slot free parking, premium lockers with biometric locks, towel service, and premium toiletries.</div>
+      <span class="facility-tag">Free for Members</span>
+    </div>
+  </div>
+</section>
+
+<!-- WORKOUTS -->
+<section id="workouts">
+  <div class="workouts-header">
+    <div>
+      <div class="section-tag">For Every Goal</div>
+      <h2 class="section-title">WORKOUT<br><span class="outline">PROGRAMS</span></h2>
+    </div>
+    <p class="section-desc" style="max-width:320px">From beginner to elite — every discipline, every goal, every body type.</p>
+  </div>
+  <div class="workout-tabs">
+    <button class="tab-btn active" onclick="filterWorkouts('all', this)">All</button>
+    <button class="tab-btn" onclick="filterWorkouts('strength', this)">Strength</button>
+    <button class="tab-btn" onclick="filterWorkouts('cardio', this)">Cardio</button>
+    <button class="tab-btn" onclick="filterWorkouts('combat', this)">Combat</button>
+    <button class="tab-btn" onclick="filterWorkouts('mind', this)">Mind & Body</button>
+    <button class="tab-btn" onclick="filterWorkouts('hiit', this)">HIIT</button>
+  </div>
+  <div class="workouts-grid reveal" style="margin-top:2rem" id="workoutsGrid">
+
+    <div class="workout-card visible" data-cat="strength">
+      <span class="workout-emoji">🏋️</span>
+      <div class="workout-name">Powerlifting</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+      <div class="workout-desc">Squat, bench, and deadlift mastery. Build raw strength with coach-guided progressive overload.</div>
+      <div class="workout-duration">⏱ 60–90 min · Advanced</div>
+    </div>
+    <div class="workout-card visible" data-cat="strength">
+      <span class="workout-emoji">💪</span>
+      <div class="workout-name">Bodybuilding</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div>
+      <div class="workout-desc">Hypertrophy-focused splits for muscle growth, symmetry, and physique transformation.</div>
+      <div class="workout-duration">⏱ 60 min · Intermediate</div>
+    </div>
+    <div class="workout-card visible" data-cat="strength">
+      <span class="workout-emoji">🏆</span>
+      <div class="workout-name">Olympic Lifting</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+      <div class="workout-desc">Snatch and clean & jerk technique with certified Olympic coaches. Power meets precision.</div>
+      <div class="workout-duration">⏱ 75 min · Advanced</div>
+    </div>
+    <div class="workout-card visible" data-cat="cardio">
+      <span class="workout-emoji">🚴</span>
+      <div class="workout-name">Spin Cycling</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div>
+      <div class="workout-desc">High-energy indoor cycling to pulsing music. Burn 600+ calories per session.</div>
+      <div class="workout-duration">⏱ 45 min · All Levels</div>
+    </div>
+    <div class="workout-card visible" data-cat="cardio">
+      <span class="workout-emoji">🏃</span>
+      <div class="workout-name">Treadmill LISS</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+      <div class="workout-desc">Low-intensity steady state cardio for fat burn, endurance building, and active recovery.</div>
+      <div class="workout-duration">⏱ 30–60 min · Beginner</div>
+    </div>
+    <div class="workout-card visible" data-cat="hiit">
+      <span class="workout-emoji">⚡</span>
+      <div class="workout-name">HIIT Inferno</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+      <div class="workout-desc">Tabata intervals, burpees, and plyometrics designed to maximize caloric burn in minimum time.</div>
+      <div class="workout-duration">⏱ 30–45 min · Advanced</div>
+    </div>
+    <div class="workout-card visible" data-cat="combat">
+      <span class="workout-emoji">🥊</span>
+      <div class="workout-name">Boxing</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div>
+      <div class="workout-desc">Fundamentals, footwork, combinations, and sparring. Build coordination, cardio, and confidence.</div>
+      <div class="workout-duration">⏱ 60 min · All Levels</div>
+    </div>
+    <div class="workout-card visible" data-cat="combat">
+      <span class="workout-emoji">🤸</span>
+      <div class="workout-name">MMA / Muay Thai</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+      <div class="workout-desc">Mixed martial arts and Muay Thai striking with professional fighters as instructors.</div>
+      <div class="workout-duration">⏱ 75 min · Intermediate</div>
+    </div>
+    <div class="workout-card visible" data-cat="mind">
+      <span class="workout-emoji">🧘</span>
+      <div class="workout-name">Power Yoga</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
+      <div class="workout-desc">Dynamic vinyasa flows that build strength, flexibility, and mental clarity. All bodies welcome.</div>
+      <div class="workout-duration">⏱ 60 min · Beginner–Int.</div>
+    </div>
+    <div class="workout-card visible" data-cat="mind">
+      <span class="workout-emoji">🌊</span>
+      <div class="workout-name">Pilates</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
+      <div class="workout-desc">Core-centric, low-impact sessions on reformer and mat for posture, stability, and body control.</div>
+      <div class="workout-duration">⏱ 45–60 min · All Levels</div>
+    </div>
+    <div class="workout-card visible" data-cat="hiit">
+      <span class="workout-emoji">🔥</span>
+      <div class="workout-name">CrossFit WOD</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+      <div class="workout-desc">Daily workout of the day. Scalable functional movements, community-driven, constantly varied.</div>
+      <div class="workout-duration">⏱ 60 min · Scalable</div>
+    </div>
+    <div class="workout-card visible" data-cat="strength">
+      <span class="workout-emoji">🦵</span>
+      <div class="workout-name">Functional Training</div>
+      <div class="workout-intensity"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
+      <div class="workout-desc">Movement patterns for everyday life — carries, hinges, pushes, pulls. Rehab-friendly and athletic.</div>
+      <div class="workout-duration">⏱ 45 min · Beginner</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PERSONAL TRAINING -->
+<section id="personal-training">
+  <div class="section-tag">1-on-1 Coaching</div>
+  <h2 class="section-title">PERSONAL<br><span class="outline">TRAINING</span></h2>
+  <div class="pt-grid">
+    <div>
+      <p class="section-desc" style="margin-bottom:2rem">Our certified coaches tailor every session to your unique biology, goals, and schedule. No cookie-cutter plans — just results.</p>
+      <div class="pt-features reveal">
+        <div class="pt-feature">
+          <div class="pt-feature-icon">📊</div>
+          <div>
+            <div class="pt-feature-title">Body Composition Analysis</div>
+            <div class="pt-feature-desc">InBody 770 scan, VO2 max testing, and full metabolic assessment before your first session.</div>
+          </div>
+        </div>
+        <div class="pt-feature">
+          <div class="pt-feature-icon">📋</div>
+          <div>
+            <div class="pt-feature-title">Custom Programming</div>
+            <div class="pt-feature-desc">Periodized training blocks built around your life — travel, stress, recovery all factored in.</div>
+          </div>
+        </div>
+        <div class="pt-feature">
+          <div class="pt-feature-icon">🍽️</div>
+          <div>
+            <div class="pt-feature-title">Nutrition Coaching</div>
+            <div class="pt-feature-desc">Macro tracking, meal timing, and supplement guidance. No restrictive diets, just education.</div>
+          </div>
+        </div>
+        <div class="pt-feature">
+          <div class="pt-feature-icon">📱</div>
+          <div>
+            <div class="pt-feature-title">24/7 App Support</div>
+            <div class="pt-feature-desc">Video check-ins, form feedback, and messaging with your trainer via our app anytime.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trainers-showcase reveal">
+      <h3 style="font-family:var(--font-heading);font-size:1rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:1.25rem;">Meet Our Trainers</h3>
+      <div class="trainer-card">
+        <div class="trainer-avatar">👨‍🦱</div>
+        <div>
+          <div class="trainer-name">Arjun Kapoor</div>
+          <div class="trainer-spec">Strength & Powerlifting</div>
+          <div class="trainer-exp">12 years · NSCA-CSCS Certified</div>
+        </div>
+        <div class="trainer-badge">Pro Athlete</div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">👩‍🦰</div>
+        <div>
+          <div class="trainer-name">Priya Sharma</div>
+          <div class="trainer-spec">CrossFit & HIIT</div>
+          <div class="trainer-exp">8 years · CrossFit L3 Coach</div>
+        </div>
+        <div class="trainer-badge">Regional Champ</div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">🧔</div>
+        <div>
+          <div class="trainer-name">Rahul Nair</div>
+          <div class="trainer-spec">Boxing & Combat</div>
+          <div class="trainer-exp">15 years · Ex-National Boxer</div>
+        </div>
+        <div class="trainer-badge">National Level</div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">👩</div>
+        <div>
+          <div class="trainer-name">Sneha Gupta</div>
+          <div class="trainer-spec">Yoga & Pilates</div>
+          <div class="trainer-exp">10 years · RYT-500 Certified</div>
+        </div>
+        <div class="trainer-badge">Wellness Expert</div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-avatar">👨‍🦲</div>
+        <div>
+          <div class="trainer-name">Vikram Bose</div>
+          <div class="trainer-spec">Nutrition & Body Comp.</div>
+          <div class="trainer-exp">9 years · Precision Nutrition L2</div>
+        </div>
+        <div class="trainer-badge">Dietitian</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-tag">Transparent Pricing</div>
+  <h2 class="section-title">MEMBERSHIP<br><span class="outline">PLANS</span></h2>
+  <p class="section-desc">No hidden fees. Cancel anytime. All plans include locker, towel, and Wi-Fi.</p>
+  <div class="pricing-grid reveal">
+    <div class="pricing-card">
+      <div class="plan-name">Starter</div>
+      <div class="plan-price"><span>₹</span>1,499</div>
+      <div class="plan-period">per month</div>
+      <ul class="plan-features">
+        <li>Access 6AM–10PM</li>
+        <li>Free weights & machines</li>
+        <li>Cardio zone</li>
+        <li>Locker & towel service</li>
+        <li>2 group classes/week</li>
+        <li class="no">Personal trainer sessions</li>
+        <li class="no">Pool & spa access</li>
+        <li class="no">Nutrition coaching</li>
+      </ul>
+      <a href="#contact" class="btn-ghost" style="display:block;text-align:center;">Get Started</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="featured-label">Most Popular</div>
+      <div class="plan-name">Elite</div>
+      <div class="plan-price"><span>₹</span>2,999</div>
+      <div class="plan-period">per month</div>
+      <ul class="plan-features">
+        <li>24/7 Full Access</li>
+        <li>All zones & equipment</li>
+        <li>Unlimited group classes</li>
+        <li>Pool & spa access</li>
+        <li>4 PT sessions/month</li>
+        <li>Nutrition consultation</li>
+        <li>InBody scan monthly</li>
+        <li class="no">Online coaching app</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="display:block;text-align:center;">Get Started ↗</a>
+    </div>
+    <div class="pricing-card">
+      <div class="plan-name">Champion</div>
+      <div class="plan-price"><span>₹</span>5,499</div>
+      <div class="plan-period">per month</div>
+      <ul class="plan-features">
+        <li>24/7 Full Access</li>
+        <li>All zones & equipment</li>
+        <li>Unlimited group classes</li>
+        <li>Pool & spa — unlimited</li>
+        <li>8 PT sessions/month</li>
+        <li>Full nutrition coaching</li>
+        <li>InBody scan bi-weekly</li>
+        <li>Online coaching app</li>
+      </ul>
+      <a href="#contact" class="btn-ghost" style="display:block;text-align:center;">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <div class="section-tag">This Week</div>
+  <h2 class="section-title">CLASS<br><span class="outline">SCHEDULE</span></h2>
+  <p class="section-desc">Book your spot in advance via the app. Classes fill up fast!</p>
+  <div class="schedule-table-wrap reveal">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Trainer</th>
+          <th>Days</th>
+          <th>Time</th>
+          <th>Duration</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="class-name">🔥 HIIT Inferno</td><td>Priya Sharma</td><td>Mon, Wed, Fri</td><td>6:00 AM</td><td>45 min</td><td><span class="level-pill adv">Advanced</span></td></tr>
+        <tr><td class="class-name">🧘 Power Yoga</td><td>Sneha Gupta</td><td>Mon–Sat</td><td>7:00 AM</td><td>60 min</td><td><span class="level-pill beg">Beginner</span></td></tr>
+        <tr><td class="class-name">🏋️ Powerlifting</td><td>Arjun Kapoor</td><td>Tue, Thu, Sat</td><td>8:00 AM</td><td>90 min</td><td><span class="level-pill adv">Advanced</span></td></tr>
+        <tr><td class="class-name">🥊 Boxing Fundamentals</td><td>Rahul Nair</td><td>Mon, Wed, Fri</td><td>5:30 PM</td><td>60 min</td><td><span class="level-pill beg">Beginner</span></td></tr>
+        <tr><td class="class-name">⚡ CrossFit WOD</td><td>Priya Sharma</td><td>Daily</td><td>6:00 PM</td><td>60 min</td><td><span class="level-pill int">Intermediate</span></td></tr>
+        <tr><td class="class-name">🚴 Spin Cycling</td><td>Vikram Bose</td><td>Tue, Thu, Sat</td><td>7:00 PM</td><td>45 min</td><td><span class="level-pill int">Intermediate</span></td></tr>
+        <tr><td class="class-name">🤸 Muay Thai</td><td>Rahul Nair</td><td>Tue, Thu</td><td>8:00 PM</td><td>75 min</td><td><span class="level-pill adv">Advanced</span></td></tr>
+        <tr><td class="class-name">🌊 Pilates Core</td><td>Sneha Gupta</td><td>Mon, Wed, Fri</td><td>10:00 AM</td><td>45 min</td><td><span class="level-pill beg">Beginner</span></td></tr>
+        <tr><td class="class-name">💪 Functional Training</td><td>Arjun Kapoor</td><td>Sat, Sun</td><td>9:00 AM</td><td>45 min</td><td><span class="level-pill beg">Beginner</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag">We're Here For You</div>
+  <h2 class="section-title">CONTACT<br><span class="outline">& LOCATION</span></h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Address</div>
+          <div class="contact-value">IronPeak Fitness Center<br>123, P.J. Extension, Near Town Hall<br>Davangere, Karnataka 577002</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">
+            <a href="tel:+918904545195" style="color:inherit;text-decoration:none;">+91 89045 45195</a><br>
+            <a href="https://wa.me/918904545195" target="_blank" style="color:var(--cyan);text-decoration:none;font-family:var(--font-heading);font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;">💬 WhatsApp Us ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">hello@ironpeakgym.in<br>trainers@ironpeakgym.in</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-label">Opening Hours</div>
+          <div class="contact-hours">
+            <div class="hours-row"><span>Monday – Friday</span><span>5:00 AM – 12:00 AM</span></div>
+            <div class="hours-row"><span>Saturday</span><span>5:00 AM – 11:00 PM</span></div>
+            <div class="hours-row"><span>Sunday</span><span>6:00 AM – 10:00 PM</span></div>
+            <div class="hours-row"><span>Public Holidays</span><span>8:00 AM – 8:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-title">Join IronPeak Today</div>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="fname" placeholder="Your full name" />
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="femail" placeholder="your@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="fphone" placeholder="+91 00000 00000" />
+      </div>
+      <div class="form-group">
+        <label>Interested In</label>
+        <select id="fplan">
+          <option value="">Select a plan or service</option>
+          <option>Starter Membership</option>
+          <option>Elite Membership</option>
+          <option>Champion Membership</option>
+          <option>Personal Training</option>
+          <option>Day Pass / Trial</option>
+          <option>Corporate Package</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message (Optional)</label>
+        <textarea id="fmsg" placeholder="Tell us about your fitness goals..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">Send Message & Start →</button>
+    </div>
+  </div>
+  <div class="map-wrap reveal">
+    <div class="map-placeholder">
+      <div class="map-pin">📍</div>
+      <div class="map-address">123, P.J. Extension, Near Town Hall, Davangere — 577002</div>
+      <a href="https://maps.google.com/?q=123+PJ+Extension+Near+Town+Hall+Davangere+Karnataka+577002" target="_blank" class="map-link">Open in Google Maps ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">IRON<span>PEAK</span></div>
+      <p class="footer-tagline">Bengaluru's premier fitness destination since 2015. We don't just build bodies — we forge champions.</p>
+      <div class="social-links">
+        <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+        <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+        <a href="#" class="social-btn" aria-label="Facebook">👤</a>
+        <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#workouts">Workouts</a></li>
+        <li><a href="#personal-training">Personal Training</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#schedule">Class Schedule</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Programs</div>
+      <ul class="footer-links">
+        <li><a href="#">Weight Loss</a></li>
+        <li><a href="#">Muscle Building</a></li>
+        <li><a href="#">Athletic Performance</a></li>
+        <li><a href="#">Senior Fitness</a></li>
+        <li><a href="#">Corporate Wellness</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:+918904545195">+91 89045 45195</a></li>
+        <li><a href="mailto:hello@ironpeakgym.in">hello@ironpeakgym.in</a></li>
+        <li><a href="https://wa.me/918904545195" target="_blank">💬 WhatsApp</a></li>
+        <li><a href="#">Davangere, Karnataka</a></li>
+        <li><a href="#">Mon–Fri: 5AM–12AM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 <span>IronPeak Gym</span>. All rights reserved. Davangere, Karnataka.</div>
+    <div class="footer-copy">Built for champions. <span>Forge your legacy.</span></div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">✓ Message Sent! We'll contact you within 24h.</div>
+
+<script src="script.js"></script>
+</body>
+</html>
